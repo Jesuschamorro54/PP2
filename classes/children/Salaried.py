@@ -1,6 +1,6 @@
 # Salaried childrenes()tCeilMeropeeyoln class
 
-from Employee import Employee
+from parent.Employee import Employee
 
 
 class Salaried(Employee):
