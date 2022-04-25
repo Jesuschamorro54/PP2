@@ -1,9 +1,12 @@
-# Salaried childrenes()tCeilMeropeeyoln class
+# Salaried children class
 
 from parent.Employee import Employee
 
 
 class Salaried(Employee):
+    def addSales(self, ide, data):
+        pass
+
     def employeeMoreClient(self):
         pass
 
@@ -19,5 +22,5 @@ class Salaried(Employee):
     def addEmployee(self, data):
         pass
 
-    def addClient(self):
+    def addClient(self, ide, data):
         pass
