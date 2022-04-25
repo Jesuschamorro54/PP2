@@ -30,5 +30,5 @@ class Commission(Employee):
     def employeeMoreSalary(self, ide):
         pass
 
-    def calculateSalary(self):
+    def calculateSalary(self, ide):
         pass

@@ -42,27 +42,6 @@ employees = [
             {'id': 0, 'name': ""}
         ]
     },
-    {
-        'id': 125,
-        'name': 'Laura',
-        'lastName': 'Rodriguez',
-        'birth': '',
-        'entry': '',
-        'category': 'Asalariado',  # Asalariado o fijo
-        'salary': 1000000,
-        'sales': [
-            {
-                'id': 0,
-                'client': 0,
-                'amount': 0,
-                'date': '00/00/00',
-                'detail': [0, 0, 0]  # array of ids
-            }
-        ],
-        'clients': [
-            {'id': 0, 'name': ""}
-        ]
-    },
 ]
 
 products = [
