@@ -2,6 +2,7 @@
 
 from PP2.classes.parent.Employee import Employee
 
+
 class Salaried(Employee):
     def addSales(self, ide, data):
         pass
@@ -24,7 +25,7 @@ class Salaried(Employee):
         pass
 
     def calculateSalary(self, ide):
-      pass
-      
+        pass
+
     def addClient(self, ide, data):
         pass

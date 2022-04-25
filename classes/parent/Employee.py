@@ -1,8 +1,9 @@
 # Employee parent classes
 
 from abc import ABC, abstractmethod
-from parcial_II.model import employees
-from parcial_II.errors.consoleErrors import *
+from PP2.model import employees
+from PP2.errors.consoleErrors import *
+
 
 class Employee(ABC):
 
@@ -22,6 +23,7 @@ class Employee(ABC):
                 employees.pop(index)
                 return employees
             index += 1
+
     # Return add status
     @abstractmethod
     def addEmployee(self, data):
@@ -66,7 +68,7 @@ class Employee(ABC):
         result = employees[0]
         ide = employees[0]['id']
         for employee in employees:
-            if (employee['salary'] > result['salary']):
+            if employee['salary'] > result['salary']:
                 ide = employee['id']
         return ide
 
