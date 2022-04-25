@@ -1,6 +1,6 @@
 #  Commission children class
 
-from Employee import Employee
+from parent.Employee import Employee
 
 
 class Commission(Employee):
