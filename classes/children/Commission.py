@@ -1,7 +1,7 @@
 #  Commission children class
 
 from parent.Employee import Employee
-from parcial_II.config import *
+from PP2.config import *
 
 
 class Commission(Employee):
@@ -27,8 +27,13 @@ class Commission(Employee):
     def employeeMoreClient(self):
         pass
 
-    def employeeMoreSalary(self, ide):
+    def employeeMoreSalary(self):
         pass
 
     def calculateSalary(self, ide):
         pass
+
+
+test = Commission()
+data = {}
+test.addEmployee(data)

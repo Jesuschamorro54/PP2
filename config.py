@@ -1,4 +1,4 @@
-from parcial_II.errors.consoleErrors import *
+from PP2.errors.consoleErrors import *
 
 mandatory_fields = {
     'employee': [
