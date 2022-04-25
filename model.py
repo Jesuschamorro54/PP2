@@ -6,7 +6,7 @@ employees = [
         'lastName': 'Chamorro',
         'birth': '',
         'entry': '',
-        'category': 'Aslariado',  # Asalariado o fijo
+        'category': 'Asalariado',  # Asalariado o fijo
         'salary': 1000000,
         'sales': [
             {
@@ -18,8 +18,7 @@ employees = [
             }
         ],
         'clients': [
-            {'id': 202, 'name': "Maria"},
-            {'id': 203, 'name': "Raul"}
+            {'id': 0, 'name': ""}
         ]
     },
     {
@@ -40,33 +39,7 @@ employees = [
             }
         ],
         'clients': [
-            {'id': 102, 'name': "Victor"},
-            {'id': 103, 'name': "Victoria"},
-            {'id': 104, 'name': "Kenny"}
-        ]
-    },
-    {
-        'id': 125,
-        'name': 'Laura',
-        'lastName': 'Rodrigez',
-        'birth': '',
-        'entry': '',
-        'category': 'Asalariado',  # Asalariado o fijo
-        'salary': 1000000,
-        'sales': [
-            {
-                'id': 0,
-                'client': 0,
-                'amount': 0,
-                'date': '00/00/00',
-                'detail': [0, 0, 0]  # array of ids
-            }
-        ],
-        'clients': [
-            {'id': 302, 'name': "Milagros"},
-            {'id': 303, 'name': "Roberto"},
-            {'id': 304, 'name': "Ane"},
-            {'id': 305, 'name': "Hannah"}
+            {'id': 0, 'name': ""}
         ]
     },
 ]

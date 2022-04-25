@@ -1,7 +1,8 @@
 # Employee parent classes
 
 from abc import ABC, abstractmethod
-from PP2.model import employees
+from parcial_II.model import employees
+from parcial_II.errors.consoleErrors import *
 
 class Employee(ABC):
 
@@ -24,12 +25,30 @@ class Employee(ABC):
     # Return add status
     @abstractmethod
     def addEmployee(self, data):
-        pass
+
+        try:
+
+            employees.append(data, 1)
+            return True
+
+        except:
+            mError('ProcessError', method='Class Employee -> addEmployee()')
+            return False
 
     # Return add status
     @abstractmethod
-    def addClient(self):
-        pass
+    def addClient(self, ide, data):
+
+        try:
+
+            for employee in employees:
+                if ide == employee['id']:
+                    employee['client'].append(data)
+                    return True
+
+        except:
+            mError('ProcessError', method='Class Employee -> addClient()')
+            return False
 
     # Returns employee' name and id with more clients
     @abstractmethod
@@ -50,3 +69,17 @@ class Employee(ABC):
             if (employee['salary'] > result['salary']):
                 ide = employee['id']
         return ide
+
+    @abstractmethod
+    def addSales(self, ide, data):
+
+        try:
+
+            for employee in employees:
+                if ide == employee['id']:
+                    employee['sales'].append(data)
+                    return True
+
+        except:
+            mError('ProcessError', method='Class Employee -> addSales()')
+            return False

@@ -1,8 +1,11 @@
-# Salaried childrenes()tCeilMeropeeyoln class
+# Salaried children class
 
 from PP2.classes.parent.Employee import Employee
 
 class Salaried(Employee):
+    def addSales(self, ide, data):
+        pass
+
     def employeeMoreClient(self):
         ide = super(Salaried, self).employeeMoreClient()
         return super(Salaried, self).search(ide)
@@ -20,18 +23,8 @@ class Salaried(Employee):
     def addEmployee(self, data):
         pass
 
-    def addClient(self, data):
-        pass
-
     def calculateSalary(self, ide):
+      pass
+      
+    def addClient(self, ide, data):
         pass
-
-test = Salaried()
-client = test.employeeMoreClient()
-salary = test.employeeMoreSalary()
-search = test.search(123)
-delete = test.deleteEmployee(125)
-print(salary)
-print(client)
-print(search)
-print(delete)
