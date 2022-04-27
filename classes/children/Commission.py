@@ -1,6 +1,6 @@
 #  Commission children class
 
-from parent.Employee import Employee
+from PP2.classes.parent.Employee import Employee
 from PP2.config import *
 
 
@@ -33,7 +33,3 @@ class Commission(Employee):
     def calculateSalary(self, ide):
         pass
 
-
-test = Commission()
-data = {}
-test.addEmployee(data)
