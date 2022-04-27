@@ -10,11 +10,12 @@ class Commission(Employee):
         return super(Commission, self).search(ide)
 
     def deleteEmployee(self, ide):
-        pass
+        return super(Commission, self).deleteEmployee(ide)
 
     def addEmployee(self, data):
-        if verifyData('employee', data):
-            super(Commission, self).addEmployee(data)
+        status, data = verifyData('employee', data)
+        if status:
+            return super(Commission, self).addEmployee(data)
 
     def addClient(self, ide, data):
         if verifyData('client', data):

@@ -1,4 +1,4 @@
-# App Model 
+# App Model
 employees = [
     {
         'id': 123,
@@ -6,7 +6,7 @@ employees = [
         'lastName': 'Chamorro',
         'birth': '',
         'entry': '',
-        'category': 'Asalariado',  # Asalariado o fijo
+        'category': 'AS',  # Asalariado o fijo
         'salary': 1000000,
         'sales': [
             {
@@ -18,7 +18,7 @@ employees = [
             }
         ],
         'clients': [
-            {'id': 0, 'name': ""}
+            {'id': 0, 'name': "", 'amount': 0}
         ]
     },
     {
@@ -27,7 +27,7 @@ employees = [
         'lastName': 'Valdez',
         'birth': '',
         'entry': '',
-        'category': 'Fijo',  # Asalariado o fijo
+        'category': 'CM',  # Asalariado o Comision
         'salary': 1500000,
         'sales': [
             {
