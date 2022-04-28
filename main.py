@@ -179,8 +179,9 @@ class Root(QMainWindow):
                     data = {
                         'id': ide,
                         'name': name,
-                        'lastname': self.e_lastnameInput.text(),
+                        'lastName': self.e_lastnameInput.text(),
                         'birth': self.e_birthInput.text(),
+                        'entry': '',
                         'category': self.radioClicked,
                     }
             else:
