@@ -20,11 +20,17 @@
     </property>
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>0</y>
-      <width>1291</width>
-      <height>891</height>
+      <x>0</x>
+      <y>-30</y>
+      <width>1241</width>
+      <height>841</height>
      </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
     </property>
     <property name="currentIndex">
      <number>0</number>
@@ -36,9 +42,9 @@
      <widget class="QLabel" name="label">
       <property name="geometry">
        <rect>
-        <x>100</x>
+        <x>80</x>
         <y>140</y>
-        <width>71</width>
+        <width>111</width>
         <height>21</height>
        </rect>
       </property>
@@ -62,7 +68,7 @@
      <widget class="QLineEdit" name="e_nameInput">
       <property name="geometry">
        <rect>
-        <x>180</x>
+        <x>200</x>
         <y>140</y>
         <width>113</width>
         <height>25</height>
@@ -75,9 +81,9 @@
      <widget class="QLabel" name="label_2">
       <property name="geometry">
        <rect>
-        <x>90</x>
+        <x>60</x>
         <y>170</y>
-        <width>81</width>
+        <width>131</width>
         <height>21</height>
        </rect>
       </property>
@@ -101,7 +107,7 @@
      <widget class="QLineEdit" name="e_lastnameInput">
       <property name="geometry">
        <rect>
-        <x>180</x>
+        <x>200</x>
         <y>170</y>
         <width>113</width>
         <height>25</height>
@@ -111,9 +117,9 @@
      <widget class="QLabel" name="label_3">
       <property name="geometry">
        <rect>
-        <x>140</x>
+        <x>100</x>
         <y>110</y>
-        <width>31</width>
+        <width>91</width>
         <height>20</height>
        </rect>
       </property>
@@ -134,7 +140,7 @@
      <widget class="QLineEdit" name="e_idInput">
       <property name="geometry">
        <rect>
-        <x>180</x>
+        <x>200</x>
         <y>110</y>
         <width>113</width>
         <height>25</height>
@@ -144,7 +150,7 @@
      <widget class="QLineEdit" name="e_birthInput">
       <property name="geometry">
        <rect>
-        <x>180</x>
+        <x>200</x>
         <y>200</y>
         <width>113</width>
         <height>25</height>
@@ -154,9 +160,9 @@
      <widget class="QLabel" name="label_4">
       <property name="geometry">
        <rect>
-        <x>30</x>
+        <x>20</x>
         <y>200</y>
-        <width>141</width>
+        <width>171</width>
         <height>20</height>
        </rect>
       </property>
@@ -177,9 +183,9 @@
      <widget class="QLabel" name="label_5">
       <property name="geometry">
        <rect>
-        <x>40</x>
+        <x>30</x>
         <y>230</y>
-        <width>131</width>
+        <width>161</width>
         <height>21</height>
        </rect>
       </property>
@@ -203,7 +209,7 @@
       </property>
       <property name="geometry">
        <rect>
-        <x>180</x>
+        <x>200</x>
         <y>230</y>
         <width>113</width>
         <height>25</height>
@@ -214,7 +220,7 @@
       <property name="geometry">
        <rect>
         <x>380</x>
-        <y>270</y>
+        <y>280</y>
         <width>112</width>
         <height>34</height>
        </rect>
@@ -233,21 +239,28 @@
      <widget class="QGroupBox" name="groupBox">
       <property name="geometry">
        <rect>
-        <x>360</x>
-        <y>110</y>
-        <width>162</width>
-        <height>120</height>
+        <x>350</x>
+        <y>100</y>
+        <width>211</width>
+        <height>151</height>
        </rect>
       </property>
       <property name="font">
        <font>
-        <pointsize>11</pointsize>
+        <pointsize>9</pointsize>
         <weight>75</weight>
         <bold>true</bold>
        </font>
       </property>
+      <property name="styleSheet">
+       <string notr="true">width: 100%;
+heigth: 100%;</string>
+      </property>
       <property name="title">
        <string>Tipo de Empleado</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignJustify|Qt::AlignVCenter</set>
       </property>
       <widget class="QRadioButton" name="radioCommision">
        <property name="geometry">
@@ -299,9 +312,9 @@
      <widget class="QLabel" name="label_7">
       <property name="geometry">
        <rect>
-        <x>210</x>
+        <x>10</x>
         <y>40</y>
-        <width>261</width>
+        <width>561</width>
         <height>41</height>
        </rect>
       </property>
@@ -315,13 +328,16 @@
       <property name="text">
        <string>AGREGAR EMPLEADO</string>
       </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
      </widget>
      <widget class="QLabel" name="label_8">
       <property name="geometry">
        <rect>
-        <x>770</x>
+        <x>580</x>
         <y>40</y>
-        <width>261</width>
+        <width>651</width>
         <height>41</height>
        </rect>
       </property>
@@ -335,13 +351,16 @@
       <property name="text">
        <string>AGREGAR CLIENTE</string>
       </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
      </widget>
      <widget class="QLabel" name="label_9">
       <property name="geometry">
        <rect>
-        <x>770</x>
+        <x>730</x>
         <y>290</y>
-        <width>71</width>
+        <width>111</width>
         <height>21</height>
        </rect>
       </property>
@@ -365,9 +384,9 @@
      <widget class="QLabel" name="label_10">
       <property name="geometry">
        <rect>
-        <x>750</x>
+        <x>720</x>
         <y>320</y>
-        <width>91</width>
+        <width>121</width>
         <height>21</height>
        </rect>
       </property>
@@ -424,9 +443,9 @@
      <widget class="QLabel" name="label_11">
       <property name="geometry">
        <rect>
-        <x>810</x>
+        <x>760</x>
         <y>260</y>
-        <width>31</width>
+        <width>81</width>
         <height>20</height>
        </rect>
       </property>
@@ -488,8 +507,8 @@
       </property>
       <property name="geometry">
        <rect>
-        <x>160</x>
-        <y>270</y>
+        <x>180</x>
+        <y>280</y>
         <width>151</width>
         <height>31</height>
        </rect>
@@ -676,6 +695,12 @@
         <bold>true</bold>
        </font>
       </property>
+      <attribute name="horizontalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="horizontalHeaderDefaultSectionSize">
+       <number>159</number>
+      </attribute>
       <column>
        <property name="text">
         <string>ID</string>
@@ -769,7 +794,7 @@
      <widget class="QLineEdit" name="totalPayrollInput">
       <property name="geometry">
        <rect>
-        <x>910</x>
+        <x>1000</x>
         <y>700</y>
         <width>151</width>
         <height>21</height>
@@ -779,7 +804,7 @@
      <widget class="QGroupBox" name="groupBox_2">
       <property name="geometry">
        <rect>
-        <x>590</x>
+        <x>680</x>
         <y>690</y>
         <width>311</width>
         <height>41</height>
@@ -837,7 +862,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1272</width>
+     <width>1239</width>
      <height>21</height>
     </rect>
    </property>
@@ -845,12 +870,12 @@
     <property name="title">
      <string>Empleado</string>
     </property>
-    <addaction name="actionAgregar_2"/>
-    <addaction name="actionListado_de_empleadps"/>
+    <addaction name="actionEmployeeView"/>
+    <addaction name="actionInfoView"/>
+    <addaction name="separator"/>
    </widget>
    <addaction name="menuEmpleado"/>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
   <action name="actionAgregar">
    <property name="text">
     <string>Agregar</string>
@@ -866,12 +891,12 @@
     <string>Eliminar</string>
    </property>
   </action>
-  <action name="actionAgregar_2">
+  <action name="actionEmployeeView">
    <property name="text">
     <string>Agregar</string>
    </property>
   </action>
-  <action name="actionListado_de_empleadps">
+  <action name="actionInfoView">
    <property name="text">
     <string>Listado de empleados</string>
    </property>

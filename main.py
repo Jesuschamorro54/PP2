@@ -4,7 +4,6 @@ from PyQt5 import uic
 from PyQt5.QtWidgets import *
 import model
 
-
 from classes.children.Commission import Commission
 from classes.children.Salaried import Salaried
 
@@ -21,6 +20,10 @@ class Root(QMainWindow):
         uic.loadUi("main.ui", self)
 
         self.loadData()
+
+        # BAR ACTIONS
+        self.actionEmployeeView.triggered.connect(lambda: self.changeView('employee'))
+        self.actionInfoView.triggered.connect(lambda: self.changeView('info'))
 
         # LABELS
         self.message.setStyleSheet("color: #000000")
@@ -40,6 +43,12 @@ class Root(QMainWindow):
         # RADIO BUTTONS
         self.radioSalaried.toggled.connect(self.onClickedRadioButtom)
         self.radioCommision.toggled.connect(self.onClickedRadioButtom)
+
+    def changeView(self, view):
+        if view == 'employee':
+            self.tabWidget.setCurrentIndex(0)
+        else:
+            self.tabWidget.setCurrentIndex(1)
 
     def onClickedRadioButtom(self):
         radioBt = self.sender()
