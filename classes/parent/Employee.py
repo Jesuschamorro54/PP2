@@ -1,8 +1,10 @@
 # Employee parent classes
 
 from abc import ABC, abstractmethod
-from PP2.model import employees
+from PP2 import model
 from PP2.errors.consoleErrors import *
+
+from PP2.controllers.SalaryController import setSalary
 
 
 class Employee(ABC):
@@ -10,19 +12,21 @@ class Employee(ABC):
     # Return employee data
     @abstractmethod
     def search(self, ide):
-        for employee in employees:
+        setSalary()
+        for employee in model.employees:
             if ide == employee['id']:
                 return employee
+        return False
 
     # Return remove status
     @abstractmethod
     def deleteEmployee(self, ide):
         index = 0
-        for employee in employees:
+        for employee in model.employees:
             if ide == employee['id']:
-                employees.pop(index)
-                return employees
+                model.employees.pop(index)
             index += 1
+        return model.employees
 
     # Return add status
     @abstractmethod
@@ -30,8 +34,8 @@ class Employee(ABC):
 
         try:
 
-            employees.append(data, 1)
-            return True
+            model.employees.append(data)
+            return model.employees
 
         except:
             mError('ProcessError', method='Class Employee -> addEmployee()')
@@ -40,36 +44,40 @@ class Employee(ABC):
     # Return add status
     @abstractmethod
     def addClient(self, ide, data):
-
         try:
 
-            for employee in employees:
+            for employee in model.employees:
                 if ide == employee['id']:
-                    employee['client'].append(data)
-                    return True
 
-        except:
+                    print("se encontro el empleado")
+                    employee['clients'].append(data)
+
+            return model.employees
+
+        except ValueError as e:
             mError('ProcessError', method='Class Employee -> addClient()')
-            return False
 
     # Returns employee' name and id with more clients
     @abstractmethod
     def employeeMoreClient(self):
-        result = employees[0]
-        ide = employees[0]['id']
-        for employee in employees:
+        result = model.employees[0]
+        ide = model.employees[0]['id']
+        for employee in model.employees:
             if len(employee['clients']) > len(result['clients']):
                 ide = employee['id']
+                result = employee
         return ide
 
     # Returns employee' name and id with more salary
     @abstractmethod
     def employeeMoreSalary(self):
-        result = employees[0]
-        ide = employees[0]['id']
-        for employee in employees:
+        setSalary()
+        result = model.employees[0]
+        ide = model.employees[0]['id']
+        for employee in model.employees:
             if employee['salary'] > result['salary']:
                 ide = employee['id']
+                result = employee
         return ide
 
     @abstractmethod
@@ -77,7 +85,7 @@ class Employee(ABC):
 
         try:
 
-            for employee in employees:
+            for employee in model.employees:
                 if ide == employee['id']:
                     employee['sales'].append(data)
                     return True

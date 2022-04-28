@@ -1,11 +1,30 @@
 # Salaried children class
 
 from PP2.classes.parent.Employee import Employee
+from PP2.config import *
+from PP2.controllers.SalaryController import *
+from PP2.controllers.PayrollController import calculatePayroll
 
 
 class Salaried(Employee):
+    def search(self, ide):
+        return super(Salaried, self).search(ide)
+
+    def deleteEmployee(self, ide):
+        return super(Salaried, self).deleteEmployee(ide)
+
+    def addEmployee(self, data):
+        status, data = verifyData('employee', data)
+        if status:
+            return super(Salaried, self).addEmployee(data)
+
+    def addClient(self, ide, data):
+        if verifyData('client', data):
+            super(Salaried, self).addClient(ide, data)
+
     def addSales(self, ide, data):
-        pass
+        if verifyData('sales', data):
+            super(Salaried, self).addSales(ide, data)
 
     def employeeMoreClient(self):
         ide = super(Salaried, self).employeeMoreClient()
@@ -15,17 +34,9 @@ class Salaried(Employee):
         ide = super(Salaried, self).employeeMoreSalary()
         return super(Salaried, self).search(ide)
 
-    def search(self, ide):
-        return super(Salaried, self).search(ide)
-
-    def deleteEmployee(self, ide):
-        return super(Salaried, self).deleteEmployee(ide)
-
-    def addEmployee(self, data):
-        pass
-
+    # Employee with static salary
     def calculateSalary(self, ide):
         pass
 
-    def addClient(self, ide, data):
-        pass
+    def calculatePayroll(self):
+        return calculatePayroll('Asalariado')

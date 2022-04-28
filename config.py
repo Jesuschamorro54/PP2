@@ -1,16 +1,17 @@
 from PP2.errors.consoleErrors import *
 
+basic_salary = 1000282
+
 mandatory_fields = {
     'employee': [
         'id',
         'name',
-        'entry',
         'category',
-        'salary',
     ],
     'client': [
         'id',
-        'name'
+        'name',
+        'amount',
     ],
     'sales': [
         'id',
@@ -26,9 +27,14 @@ defaults_fields = {
     'employee': {
         'lastName': '',
         'birth': '',
-        'sales': [],
+        'salary': 0,
         'clients': [],
     },
+}
+
+RadioButtonsId = {
+    'Asalariado': 'AS',
+    'Comision': 'CM',
 }
 
 
@@ -45,5 +51,4 @@ def verifyData(model, data):
         for key, value in defaults_fields[model].items():
             if key not in data:
                 data[key] = value
-
-    return True
+    return True, data
