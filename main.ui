@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1272</width>
-    <height>841</height>
+    <width>1506</width>
+    <height>926</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -22,8 +22,8 @@
      <rect>
       <x>0</x>
       <y>-30</y>
-      <width>1241</width>
-      <height>841</height>
+      <width>1631</width>
+      <height>971</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -33,7 +33,7 @@
      </sizepolicy>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="tab">
      <attribute name="title">
@@ -42,8 +42,8 @@
      <widget class="QLabel" name="label">
       <property name="geometry">
        <rect>
-        <x>80</x>
-        <y>140</y>
+        <x>210</x>
+        <y>170</y>
         <width>111</width>
         <height>21</height>
        </rect>
@@ -59,7 +59,7 @@
        <enum>Qt::LeftToRight</enum>
       </property>
       <property name="text">
-       <string>Nombre : </string>
+       <string>Nombre* : </string>
       </property>
       <property name="alignment">
        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -68,8 +68,8 @@
      <widget class="QLineEdit" name="e_nameInput">
       <property name="geometry">
        <rect>
-        <x>200</x>
-        <y>140</y>
+        <x>330</x>
+        <y>170</y>
         <width>113</width>
         <height>25</height>
        </rect>
@@ -81,8 +81,8 @@
      <widget class="QLabel" name="label_2">
       <property name="geometry">
        <rect>
-        <x>60</x>
-        <y>170</y>
+        <x>190</x>
+        <y>200</y>
         <width>131</width>
         <height>21</height>
        </rect>
@@ -107,8 +107,8 @@
      <widget class="QLineEdit" name="e_lastnameInput">
       <property name="geometry">
        <rect>
-        <x>200</x>
-        <y>170</y>
+        <x>330</x>
+        <y>200</y>
         <width>113</width>
         <height>25</height>
        </rect>
@@ -117,8 +117,8 @@
      <widget class="QLabel" name="label_3">
       <property name="geometry">
        <rect>
-        <x>100</x>
-        <y>110</y>
+        <x>230</x>
+        <y>140</y>
         <width>91</width>
         <height>20</height>
        </rect>
@@ -131,7 +131,7 @@
        </font>
       </property>
       <property name="text">
-       <string>ID : </string>
+       <string>ID* : </string>
       </property>
       <property name="alignment">
        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -140,8 +140,8 @@
      <widget class="QLineEdit" name="e_idInput">
       <property name="geometry">
        <rect>
-        <x>200</x>
-        <y>110</y>
+        <x>330</x>
+        <y>140</y>
         <width>113</width>
         <height>25</height>
        </rect>
@@ -150,8 +150,8 @@
      <widget class="QLineEdit" name="e_birthInput">
       <property name="geometry">
        <rect>
-        <x>200</x>
-        <y>200</y>
+        <x>330</x>
+        <y>230</y>
         <width>113</width>
         <height>25</height>
        </rect>
@@ -160,8 +160,8 @@
      <widget class="QLabel" name="label_4">
       <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>200</y>
+        <x>150</x>
+        <y>230</y>
         <width>171</width>
         <height>20</height>
        </rect>
@@ -183,8 +183,8 @@
      <widget class="QLabel" name="label_5">
       <property name="geometry">
        <rect>
-        <x>30</x>
-        <y>230</y>
+        <x>160</x>
+        <y>260</y>
         <width>161</width>
         <height>21</height>
        </rect>
@@ -197,7 +197,7 @@
        </font>
       </property>
       <property name="text">
-       <string>Año de Ingreso : </string>
+       <string>Año de Ingreso* : </string>
       </property>
       <property name="alignment">
        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -209,8 +209,8 @@
       </property>
       <property name="geometry">
        <rect>
-        <x>200</x>
-        <y>230</y>
+        <x>330</x>
+        <y>260</y>
         <width>113</width>
         <height>25</height>
        </rect>
@@ -219,8 +219,8 @@
      <widget class="QPushButton" name="addEmployeeBT">
       <property name="geometry">
        <rect>
-        <x>380</x>
-        <y>280</y>
+        <x>510</x>
+        <y>310</y>
         <width>112</width>
         <height>34</height>
        </rect>
@@ -239,8 +239,8 @@
      <widget class="QGroupBox" name="groupBox">
       <property name="geometry">
        <rect>
-        <x>350</x>
-        <y>100</y>
+        <x>480</x>
+        <y>130</y>
         <width>211</width>
         <height>151</height>
        </rect>
@@ -312,8 +312,8 @@ heigth: 100%;</string>
      <widget class="QLabel" name="label_7">
       <property name="geometry">
        <rect>
-        <x>10</x>
-        <y>40</y>
+        <x>140</x>
+        <y>70</y>
         <width>561</width>
         <height>41</height>
        </rect>
@@ -335,8 +335,8 @@ heigth: 100%;</string>
      <widget class="QLabel" name="label_8">
       <property name="geometry">
        <rect>
-        <x>580</x>
-        <y>40</y>
+        <x>710</x>
+        <y>70</y>
         <width>651</width>
         <height>41</height>
        </rect>
@@ -358,8 +358,8 @@ heigth: 100%;</string>
      <widget class="QLabel" name="label_9">
       <property name="geometry">
        <rect>
-        <x>730</x>
-        <y>290</y>
+        <x>860</x>
+        <y>320</y>
         <width>111</width>
         <height>21</height>
        </rect>
@@ -384,8 +384,8 @@ heigth: 100%;</string>
      <widget class="QLabel" name="label_10">
       <property name="geometry">
        <rect>
-        <x>720</x>
-        <y>320</y>
+        <x>850</x>
+        <y>350</y>
         <width>121</width>
         <height>21</height>
        </rect>
@@ -401,7 +401,7 @@ heigth: 100%;</string>
        <enum>QFrame::Plain</enum>
       </property>
       <property name="text">
-       <string>Monto :</string>
+       <string>Monto* :</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -410,8 +410,8 @@ heigth: 100%;</string>
      <widget class="QLineEdit" name="c_idInput">
       <property name="geometry">
        <rect>
-        <x>850</x>
-        <y>260</y>
+        <x>980</x>
+        <y>290</y>
         <width>113</width>
         <height>25</height>
        </rect>
@@ -420,8 +420,8 @@ heigth: 100%;</string>
      <widget class="QLineEdit" name="c_nameInput">
       <property name="geometry">
        <rect>
-        <x>850</x>
-        <y>290</y>
+        <x>980</x>
+        <y>320</y>
         <width>113</width>
         <height>25</height>
        </rect>
@@ -433,8 +433,8 @@ heigth: 100%;</string>
      <widget class="QLineEdit" name="c_amountInput">
       <property name="geometry">
        <rect>
-        <x>850</x>
-        <y>320</y>
+        <x>980</x>
+        <y>350</y>
         <width>113</width>
         <height>25</height>
        </rect>
@@ -443,8 +443,8 @@ heigth: 100%;</string>
      <widget class="QLabel" name="label_11">
       <property name="geometry">
        <rect>
-        <x>760</x>
-        <y>260</y>
+        <x>890</x>
+        <y>290</y>
         <width>81</width>
         <height>20</height>
        </rect>
@@ -457,20 +457,20 @@ heigth: 100%;</string>
        </font>
       </property>
       <property name="text">
-       <string>ID : </string>
+       <string>ID* : </string>
       </property>
       <property name="alignment">
        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
       </property>
      </widget>
-     <widget class="QComboBox" name="ComboNameEmployee">
+     <widget class="QComboBox" name="comboNameEmployee">
       <property name="enabled">
        <bool>true</bool>
       </property>
       <property name="geometry">
        <rect>
-        <x>790</x>
-        <y>130</y>
+        <x>920</x>
+        <y>160</y>
         <width>191</width>
         <height>21</height>
        </rect>
@@ -495,11 +495,6 @@ heigth: 100%;</string>
         <string>Nombre del Empleado</string>
        </property>
       </item>
-      <item>
-       <property name="text">
-        <string>Jesus Chamorro</string>
-       </property>
-      </item>
      </widget>
      <widget class="QComboBox" name="comboNumOfYear">
       <property name="enabled">
@@ -507,18 +502,48 @@ heigth: 100%;</string>
       </property>
       <property name="geometry">
        <rect>
-        <x>180</x>
-        <y>280</y>
+        <x>310</x>
+        <y>310</y>
         <width>151</width>
         <height>31</height>
        </rect>
       </property>
       <property name="editable">
-       <bool>true</bool>
+       <bool>false</bool>
       </property>
       <property name="currentText">
-       <string>Años de Antiguedad</string>
+       <string>Años de antiguedad</string>
       </property>
+      <item>
+       <property name="text">
+        <string>Años de antiguedad</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Menos de 2 años</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>2 - 3 años</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>4 - 7 años</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>8 - 15 años</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Más de 15 años</string>
+       </property>
+      </item>
      </widget>
      <widget class="QLabel" name="cant_client">
       <property name="geometry">
@@ -539,11 +564,18 @@ heigth: 100%;</string>
      <widget class="QLabel" name="message">
       <property name="geometry">
        <rect>
-        <x>16</x>
-        <y>470</y>
-        <width>1191</width>
+        <x>0</x>
+        <y>510</y>
+        <width>1500</width>
         <height>20</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
       </property>
       <property name="text">
        <string/>
@@ -555,8 +587,8 @@ heigth: 100%;</string>
      <widget class="Line" name="line">
       <property name="geometry">
        <rect>
-        <x>650</x>
-        <y>190</y>
+        <x>780</x>
+        <y>220</y>
         <width>481</width>
         <height>20</height>
        </rect>
@@ -568,8 +600,8 @@ heigth: 100%;</string>
      <widget class="Line" name="line_2">
       <property name="geometry">
        <rect>
-        <x>563</x>
-        <y>30</y>
+        <x>730</x>
+        <y>50</y>
         <width>20</width>
         <height>441</height>
        </rect>
@@ -581,8 +613,8 @@ heigth: 100%;</string>
      <widget class="QPushButton" name="addClientBT">
       <property name="geometry">
        <rect>
-        <x>850</x>
-        <y>390</y>
+        <x>980</x>
+        <y>420</y>
         <width>111</width>
         <height>31</height>
        </rect>
@@ -604,7 +636,7 @@ heigth: 100%;</string>
      <widget class="QPushButton" name="deleteBT">
       <property name="geometry">
        <rect>
-        <x>980</x>
+        <x>1140</x>
         <y>150</y>
         <width>91</width>
         <height>34</height>
@@ -617,7 +649,7 @@ heigth: 100%;</string>
      <widget class="QPushButton" name="showAllBT">
       <property name="geometry">
        <rect>
-        <x>1090</x>
+        <x>1250</x>
         <y>150</y>
         <width>111</width>
         <height>34</height>
@@ -630,7 +662,7 @@ heigth: 100%;</string>
      <widget class="QPushButton" name="employeeMoreSalaryBT">
       <property name="geometry">
        <rect>
-        <x>240</x>
+        <x>400</x>
         <y>150</y>
         <width>191</width>
         <height>34</height>
@@ -643,7 +675,7 @@ heigth: 100%;</string>
      <widget class="QPushButton" name="searchBT">
       <property name="geometry">
        <rect>
-        <x>880</x>
+        <x>1040</x>
         <y>150</y>
         <width>81</width>
         <height>34</height>
@@ -656,7 +688,7 @@ heigth: 100%;</string>
      <widget class="QLineEdit" name="searchInput">
       <property name="geometry">
        <rect>
-        <x>750</x>
+        <x>910</x>
         <y>150</y>
         <width>113</width>
         <height>31</height>
@@ -669,7 +701,7 @@ heigth: 100%;</string>
      <widget class="QPushButton" name="employeeMoreClientBT">
       <property name="geometry">
        <rect>
-        <x>30</x>
+        <x>190</x>
         <y>150</y>
         <width>191</width>
         <height>34</height>
@@ -682,10 +714,10 @@ heigth: 100%;</string>
      <widget class="QTableWidget" name="EmployeeTable">
       <property name="geometry">
        <rect>
-        <x>10</x>
+        <x>140</x>
         <y>200</y>
-        <width>1221</width>
-        <height>481</height>
+        <width>1271</width>
+        <height>351</height>
        </rect>
       </property>
       <property name="font">
@@ -695,12 +727,23 @@ heigth: 100%;</string>
         <bold>true</bold>
        </font>
       </property>
+      <property name="sortingEnabled">
+       <bool>true</bool>
+      </property>
       <attribute name="horizontalHeaderVisible">
-       <bool>false</bool>
+       <bool>true</bool>
       </attribute>
       <attribute name="horizontalHeaderDefaultSectionSize">
-       <number>159</number>
+       <number>150</number>
       </attribute>
+      <attribute name="verticalHeaderDefaultSectionSize">
+       <number>25</number>
+      </attribute>
+      <row>
+       <property name="text">
+        <string>0</string>
+       </property>
+      </row>
       <column>
        <property name="text">
         <string>ID</string>
@@ -741,11 +784,51 @@ heigth: 100%;</string>
         <string>Clientes</string>
        </property>
       </column>
+      <item row="0" column="0">
+       <property name="text">
+        <string>12</string>
+       </property>
+      </item>
+      <item row="0" column="1">
+       <property name="text">
+        <string>qwedas</string>
+       </property>
+      </item>
+      <item row="0" column="2">
+       <property name="text">
+        <string>jgv</string>
+       </property>
+      </item>
+      <item row="0" column="3">
+       <property name="text">
+        <string>jh</string>
+       </property>
+      </item>
+      <item row="0" column="4">
+       <property name="text">
+        <string>bhbj</string>
+       </property>
+      </item>
+      <item row="0" column="5">
+       <property name="text">
+        <string>kbh</string>
+       </property>
+      </item>
+      <item row="0" column="6">
+       <property name="text">
+        <string>kbh</string>
+       </property>
+      </item>
+      <item row="0" column="7">
+       <property name="text">
+        <string>jkb</string>
+       </property>
+      </item>
      </widget>
      <widget class="QLabel" name="label_6">
       <property name="geometry">
        <rect>
-        <x>710</x>
+        <x>870</x>
         <y>150</y>
         <width>31</width>
         <height>31</height>
@@ -771,7 +854,7 @@ heigth: 100%;</string>
      <widget class="QLabel" name="label_12">
       <property name="geometry">
        <rect>
-        <x>0</x>
+        <x>160</x>
         <y>50</y>
         <width>1211</width>
         <height>41</height>
@@ -794,8 +877,8 @@ heigth: 100%;</string>
      <widget class="QLineEdit" name="totalPayrollInput">
       <property name="geometry">
        <rect>
-        <x>1000</x>
-        <y>700</y>
+        <x>1050</x>
+        <y>570</y>
         <width>151</width>
         <height>21</height>
        </rect>
@@ -805,8 +888,8 @@ heigth: 100%;</string>
       <property name="geometry">
        <rect>
         <x>680</x>
-        <y>690</y>
-        <width>311</width>
+        <y>560</y>
+        <width>361</width>
         <height>41</height>
        </rect>
       </property>
@@ -818,7 +901,7 @@ heigth: 100%;</string>
         <rect>
          <x>10</x>
          <y>10</y>
-         <width>141</width>
+         <width>171</width>
          <height>20</height>
         </rect>
        </property>
@@ -836,9 +919,9 @@ heigth: 100%;</string>
       <widget class="QRadioButton" name="radioPayrollComission">
        <property name="geometry">
         <rect>
-         <x>160</x>
+         <x>190</x>
          <y>10</y>
-         <width>141</width>
+         <width>161</width>
          <height>20</height>
         </rect>
        </property>
@@ -854,6 +937,63 @@ heigth: 100%;</string>
        </property>
       </widget>
      </widget>
+     <widget class="QTableWidget" name="clientTable">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>640</y>
+        <width>551</width>
+        <height>192</height>
+       </rect>
+      </property>
+      <property name="showGrid">
+       <bool>true</bool>
+      </property>
+      <attribute name="horizontalHeaderDefaultSectionSize">
+       <number>180</number>
+      </attribute>
+      <attribute name="horizontalHeaderMinimumSectionSize">
+       <number>44</number>
+      </attribute>
+      <column>
+       <property name="text">
+        <string>Identificación</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Nombre completo</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>monto recibido</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>620</y>
+        <width>381</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Clientes del empleado selecionado</string>
+      </property>
+     </widget>
     </widget>
    </widget>
   </widget>
@@ -862,8 +1002,8 @@ heigth: 100%;</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1239</width>
-     <height>21</height>
+     <width>1506</width>
+     <height>26</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuEmpleado">

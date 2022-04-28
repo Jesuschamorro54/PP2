@@ -1,6 +1,7 @@
 #  Commission children class
 
 from PP2.classes.parent.Employee import Employee
+from PP2.controllers.PayrollController import calculatePayroll
 from PP2.config import *
 
 
@@ -19,7 +20,7 @@ class Commission(Employee):
 
     def addClient(self, ide, data):
         if verifyData('client', data):
-            super(Commission, self).addClient(ide, data)
+            return super(Commission, self).addClient(ide, data)
 
     def addSales(self, ide, data):
         if verifyData('sales', data):
@@ -35,4 +36,7 @@ class Commission(Employee):
 
     def calculateSalary(self, ide):
         pass
+
+    def calculatePayroll(self):
+        return calculatePayroll('Comision')
 
