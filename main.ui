@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1239</width>
-    <height>834</height>
+    <width>1272</width>
+    <height>841</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,9 +20,9 @@
     </property>
     <property name="geometry">
      <rect>
-      <x>0</x>
+      <x>10</x>
       <y>0</y>
-      <width>1251</width>
+      <width>1291</width>
       <height>891</height>
      </rect>
     </property>
@@ -444,9 +444,9 @@
        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
       </property>
      </widget>
-     <widget class="QComboBox" name="comboNameEmployee">
+     <widget class="QComboBox" name="ComboNameEmployee">
       <property name="enabled">
-       <bool>false</bool>
+       <bool>true</bool>
       </property>
       <property name="geometry">
        <rect>
@@ -474,6 +474,11 @@
       <item>
        <property name="text">
         <string>Nombre del Empleado</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Jesus Chamorro</string>
        </property>
       </item>
      </widget>
@@ -580,7 +585,7 @@
      <widget class="QPushButton" name="deleteBT">
       <property name="geometry">
        <rect>
-        <x>950</x>
+        <x>980</x>
         <y>150</y>
         <width>91</width>
         <height>34</height>
@@ -593,7 +598,7 @@
      <widget class="QPushButton" name="showAllBT">
       <property name="geometry">
        <rect>
-        <x>1050</x>
+        <x>1090</x>
         <y>150</y>
         <width>111</width>
         <height>34</height>
@@ -606,7 +611,7 @@
      <widget class="QPushButton" name="employeeMoreSalaryBT">
       <property name="geometry">
        <rect>
-        <x>270</x>
+        <x>240</x>
         <y>150</y>
         <width>191</width>
         <height>34</height>
@@ -619,7 +624,7 @@
      <widget class="QPushButton" name="searchBT">
       <property name="geometry">
        <rect>
-        <x>860</x>
+        <x>880</x>
         <y>150</y>
         <width>81</width>
         <height>34</height>
@@ -632,7 +637,7 @@
      <widget class="QLineEdit" name="searchInput">
       <property name="geometry">
        <rect>
-        <x>730</x>
+        <x>750</x>
         <y>150</y>
         <width>113</width>
         <height>31</height>
@@ -645,7 +650,7 @@
      <widget class="QPushButton" name="employeeMoreClientBT">
       <property name="geometry">
        <rect>
-        <x>60</x>
+        <x>30</x>
         <y>150</y>
         <width>191</width>
         <height>34</height>
@@ -658,9 +663,9 @@
      <widget class="QTableWidget" name="EmployeeTable">
       <property name="geometry">
        <rect>
-        <x>40</x>
+        <x>10</x>
         <y>200</y>
-        <width>1121</width>
+        <width>1221</width>
         <height>481</height>
        </rect>
       </property>
@@ -706,11 +711,16 @@
         <string>Salario</string>
        </property>
       </column>
+      <column>
+       <property name="text">
+        <string>Clientes</string>
+       </property>
+      </column>
      </widget>
      <widget class="QLabel" name="label_6">
       <property name="geometry">
        <rect>
-        <x>690</x>
+        <x>710</x>
         <y>150</y>
         <width>31</width>
         <height>31</height>
@@ -759,7 +769,7 @@
      <widget class="QLineEdit" name="totalPayrollInput">
       <property name="geometry">
        <rect>
-        <x>940</x>
+        <x>910</x>
         <y>700</y>
         <width>151</width>
         <height>21</height>
@@ -769,7 +779,7 @@
      <widget class="QGroupBox" name="groupBox_2">
       <property name="geometry">
        <rect>
-        <x>620</x>
+        <x>590</x>
         <y>690</y>
         <width>311</width>
         <height>41</height>
@@ -803,7 +813,7 @@
         <rect>
          <x>160</x>
          <y>10</y>
-         <width>131</width>
+         <width>141</width>
          <height>20</height>
         </rect>
        </property>
@@ -827,8 +837,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1239</width>
-     <height>26</height>
+     <width>1272</width>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuEmpleado">

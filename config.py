@@ -11,7 +11,7 @@ mandatory_fields = {
     ],
     'client': [
         'id',
-        'name'
+        'name',
         'amount',
     ],
     'sales': [

@@ -39,7 +39,7 @@ employees = [
             }
         ],
         'clients': [
-            {'id': 0, 'name': ""}
+            {'id': 0, 'name': "", 'amount': 0}
         ]
     },
 ]
