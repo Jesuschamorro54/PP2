@@ -34,5 +34,5 @@ class Salaried(Employee):
         return super(Salaried, self).search(ide)
 
     # Employee with static salary
-    def calculateSalary(self):
+    def calculateSalary(self, ide):
         pass

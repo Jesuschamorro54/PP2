@@ -26,10 +26,12 @@ class Commission(Employee):
             super(Commission, self).addSales(ide, data)
 
     def employeeMoreClient(self):
-        pass
+        ide = super(Commission, self).employeeMoreClient()
+        return super(Commission, self).search(ide)
 
     def employeeMoreSalary(self):
-        pass
+        ide = super(Commission, self).employeeMoreSalary()
+        return super(Commission, self).search(ide)
 
     def calculateSalary(self, ide):
         pass

@@ -12,8 +12,10 @@ class Root(QMainWindow):
 
     def __init__(self):
         super().__init__()
+        self.ComboNameEmployee = None
         self.data = None
         self.radioClicked = ''
+
 
         uic.loadUi("main.ui", self)
 
@@ -29,7 +31,7 @@ class Root(QMainWindow):
 
         # BUTTONS FORM
         self.addEmployeeBT.clicked.connect(self.createEmployee)
-        self.addClientBT.clicked.connect(self.createEmployee)
+        self.addClientBT.clicked.connect(self.createClient)
 
         # BUTTONS TABLE
         self.employeeMoreClientBT.clicked.connect(self.search)
@@ -54,6 +56,9 @@ class Root(QMainWindow):
             self.radioClicked = radioBt.text()
         elif radioBt.text() == 'Comision':
             self.radioClicked = radioBt.text()
+
+    def getItem(self):
+        self.ComboNameEmployee.currentText()
 
     def loadData(self):
         self.printTable(model.employees)
@@ -122,6 +127,26 @@ class Root(QMainWindow):
             else:
                 print("Por salario")
                 model.employees = employeeSalaried.addEmployee(data)
+
+        self.loadData()
+
+
+    def createClient(self):
+
+        data = {}
+        ide = self.c_idInput.text()
+        name = self.c_nameInput.text()
+        amount = self.c_amountInput.text()
+
+        if self.ComboNameEmployee:
+            data = {
+                'employee': self.ComboNameEmployee,
+                'id': ide,
+                'name': name,
+                'amount': amount,
+            }
+            model.employees = employeeComission.addClient(ide, data)
+        else:
 
         self.loadData()
 
