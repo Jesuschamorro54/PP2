@@ -28,7 +28,6 @@ defaults_fields = {
         'lastName': '',
         'birth': '',
         'salary': 0,
-        'sales': [],
         'clients': [],
     },
 }
