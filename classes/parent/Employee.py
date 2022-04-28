@@ -4,15 +4,19 @@ from abc import ABC, abstractmethod
 from PP2 import model
 from PP2.errors.consoleErrors import *
 
+from PP2.controllers.SalaryController import setSalary
+
 
 class Employee(ABC):
 
     # Return employee data
     @abstractmethod
     def search(self, ide):
+        setSalary()
         for employee in model.employees:
             if ide == employee['id']:
                 return employee
+        return False
 
     # Return remove status
     @abstractmethod
@@ -21,8 +25,8 @@ class Employee(ABC):
         for employee in model.employees:
             if ide == employee['id']:
                 model.employees.pop(index)
-                return model.employees
             index += 1
+        return model.employees
 
     # Return add status
     @abstractmethod
@@ -40,17 +44,18 @@ class Employee(ABC):
     # Return add status
     @abstractmethod
     def addClient(self, ide, data):
-
         try:
 
             for employee in model.employees:
                 if ide == employee['id']:
-                    employee['client'].append(data)
-                    return True
 
-        except:
+                    print("se encontro el empleado")
+                    employee['clients'].append(data)
+
+            return model.employees
+
+        except ValueError as e:
             mError('ProcessError', method='Class Employee -> addClient()')
-            return False
 
     # Returns employee' name and id with more clients
     @abstractmethod
@@ -60,16 +65,19 @@ class Employee(ABC):
         for employee in model.employees:
             if len(employee['clients']) > len(result['clients']):
                 ide = employee['id']
+                result = employee
         return ide
 
     # Returns employee' name and id with more salary
     @abstractmethod
     def employeeMoreSalary(self):
+        setSalary()
         result = model.employees[0]
         ide = model.employees[0]['id']
         for employee in model.employees:
             if employee['salary'] > result['salary']:
                 ide = employee['id']
+                result = employee
         return ide
 
     @abstractmethod

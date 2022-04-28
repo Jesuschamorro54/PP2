@@ -6,7 +6,6 @@ mandatory_fields = {
     'employee': [
         'id',
         'name',
-        'entry',
         'category',
     ],
     'client': [
@@ -28,7 +27,7 @@ defaults_fields = {
     'employee': {
         'lastName': '',
         'birth': '',
-        'salary': basic_salary,
+        'salary': 0,
         'sales': [],
         'clients': [],
     },

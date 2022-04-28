@@ -3,6 +3,7 @@
 from PP2.classes.parent.Employee import Employee
 from PP2.config import *
 from PP2.controllers.SalaryController import *
+from PP2.controllers.PayrollController import calculatePayroll
 
 
 class Salaried(Employee):
@@ -36,3 +37,6 @@ class Salaried(Employee):
     # Employee with static salary
     def calculateSalary(self, ide):
         pass
+
+    def calculatePayroll(self):
+        return calculatePayroll('Asalariado')

@@ -6,19 +6,34 @@ employees = [
         'lastName': 'Chamorro',
         'birth': '',
         'entry': '',
-        'category': 'AS',  # Asalariado o fijo
+        'category': 'Asalariado',  # Asalariado o fijo
         'salary': 1000000,
-        'sales': [
-            {
-                'id': 0,
-                'client': 0,
-                'amount': 0,
-                'date': '00/00/00',
-                'detail': [0, 0, 0]  # array of ids
-            }
-        ],
         'clients': [
-            {'id': 0, 'name': "", 'amount': 0}
+            {'id': 0, 'name': "Juancho", 'amount': 2000}
+        ]
+    },
+    {
+            'id': 987,
+            'name': 'Jesus',
+            'lastName': 'Chamorro',
+            'birth': '',
+            'entry': '',
+            'category': 'Asalariado',  # Asalariado o fijo
+            'salary': 1000000,
+            'clients': [
+                {'id': 0, 'name': "Juancho", 'amount': 2000}
+            ]
+        },
+    {
+        'id': 876,
+        'name': 'Jesus',
+        'lastName': 'Chamorro',
+        'birth': '',
+        'entry': '',
+        'category': 'Asalariado',  # Asalariado o fijo
+        'salary': 1000000,
+        'clients': [
+            {'id': 0, 'name': "Juancho", 'amount': 2000}
         ]
     },
     {
@@ -27,19 +42,13 @@ employees = [
         'lastName': 'Valdez',
         'birth': '',
         'entry': '',
-        'category': 'CM',  # Asalariado o Comision
-        'salary': 1500000,
-        'sales': [
-            {
-                'id': 0,
-                'client': 0,
-                'amount': 0,
-                'date': '00/00/00',
-                'detail': [0, 0, 0]  # array of ids
-            }
-        ],
+        'category': 'Comision',  # Asalariado o Comision
+        'salary': 2280000,
         'clients': [
-            {'id': 0, 'name': "", 'amount': 0}
+            {'id': 0, 'name': "Pepito Perez", 'amount': 150000},
+            {'id': 2, 'name': "Pepito Perez2", 'amount': 200000},
+            {'id': 3, 'name': "Pepito Perez3", 'amount': 80000},
+            {'id': 4, 'name': "Pepito Perez4", 'amount': 140000}
         ]
     },
 ]
